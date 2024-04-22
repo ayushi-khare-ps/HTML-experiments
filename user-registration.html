@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration!</title>
+    <style>
+        fieldset{
+            border-radius: 4px;
+            border-color: rgb(57, 52, 52);
+            width: 50vw;
+
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+        div{
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Welcome new user!</h2>
+    <h4>Please fill below form to complete registration process.</h4>
+
+    <form action="usrreg.html" method="POST" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>New User Registration</legend>
+            <div>
+            <label for="name"><sup style="color: rgb(78, 4, 4);">*</sup>Full Name:</label>
+            <input type="text" id="name" name="user_name" required minlength="1" maxlength="100" ><br></div>
+            <div>
+            <label for="pass"><sup style="color: rgb(78, 4, 4);">*</sup>Password:</label>
+            <input type="password" id="pass" name="password" required minlength="8" maxlength="20"><br></div>
+            <div>
+            <label for="pass1"><sup style="color: rgb(78, 4, 4);">*</sup>Re-enter password:</label>
+            <input type="password" id="pass1" name="password1" required minlength="8" maxlength="20"><br></div>
+            <div>
+            <sup style="color: rgb(78, 4, 4);">*</sup>How did you hear about us?:<br>
+            <label><input type="radio" name="ques" value="social_media" checked="checked">Social Media</label>
+            <label><input type="radio" name="ques" value="offical_website">Official Website</label>
+            <label><input type="radio" name="ques" value="google_search">Google Search</label><br></div>
+            <div>
+            <input type="checkbox" name="agree" value="agreed">
+            I agree to the terms and conditions!<br></div>
+            <div>
+            <input type="submit" value="Register">
+            <input type="submit" value="Cancel"></div>
+
+        </fieldset>
+
+
+    </form>
+
+
+</body>
+
+</html>
